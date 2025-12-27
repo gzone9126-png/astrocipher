@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3") no-repeat center/cover;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: #ffd700;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 15px #6f00ff;
+}
+
+.service-card h3 {
+    color: #ffcc00;
+}
+
+.service-card span {
+    display: block;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff00ff, #6f00ff);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.booking {
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.booking form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.booking input,
+.booking textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+}
