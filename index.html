@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AstroCipher | Astrology & Cosmic Guidance</title>
+    <title>AstroCipher | Online Astrology Consultation</title>
+
+    <meta name="description" content="AstroCipher offers Kundali analysis, marriage consultation, life problem remedies, and future prediction. Book online astrology sessions.">
+    <meta name="keywords" content="AstroCipher, astrology, kundali, marriage astrology, future prediction">
+    <meta name="author" content="AstroCipher">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>ASTROCIPHER</h1>
-    <p>Decode Your Destiny Through the Stars ✨</p>
+    <h1>ASTROCIPHER ✨</h1>
+    <p>Decode Your Destiny Through the Stars</p>
 </header>
 
 <section class="hero">
     <h2>Cosmic Astrology & Spiritual Guidance</h2>
-    <p>Discover your past, present, and future with expert astrological insights.</p>
+    <p>Accurate predictions based on planetary movements and birth details.</p>
 </section>
 
 <section class="services">
-    <h2>Our Astrology Services</h2>
+    <h2>Astrology Services</h2>
 
     <div class="service-card">
         <h3>Kundali Study</h3>
@@ -29,21 +34,21 @@
 
     <div class="service-card">
         <h3>Marriage Consultation</h3>
-        <p>Marriage matching, doshas & solutions.</p>
+        <p>Marriage matching, dosha analysis & solutions.</p>
         <span>₹899</span>
         <button onclick="openBooking('Marriage Consultation - ₹899')">Book Now</button>
     </div>
 
     <div class="service-card">
         <h3>Life Problems & Remedies</h3>
-        <p>Career, finance, health & spiritual remedies.</p>
+        <p>Career, finance, health & spiritual guidance.</p>
         <span>₹599</span>
         <button onclick="openBooking('Life Problems & Remedies - ₹599')">Book Now</button>
     </div>
 
     <div class="service-card">
         <h3>Future Prediction</h3>
-        <p>Planetary transits & future guidance.</p>
+        <p>Planetary transits & future insights.</p>
         <span>₹799</span>
         <button onclick="openBooking('Future Prediction - ₹799')">Book Now</button>
     </div>
@@ -53,13 +58,22 @@
     <h2>Book Online Astrology Consultation</h2>
 
     <form>
-        <input type="text" id="service" placeholder="Selected Service" readonly>
+        <input type="text" id="service" placeholder="Selected Service" readonly required>
 
         <input type="text" placeholder="Full Name" required>
 
+        <label>Birth Date</label>
         <input type="date" required>
 
-        <input type="time" required>
+        <label>Birth Time</label>
+        <div class="time-row">
+            <input type="time" required>
+            <select required>
+                <option value="">AM/PM</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
 
         <input type="text" placeholder="Birth Place (City, State, Country)" required>
 
@@ -69,10 +83,25 @@
 
         <textarea placeholder="Your Problem / Question"></textarea>
 
-        <button type="button" onclick="makePayment()">Pay & Book Now</button>
+        <button type="button" onclick="makePayment()">Pay via Razorpay</button>
     </form>
-</section>
 
+    
+    <div class="qr-payment">
+        <h3>OR Pay Using Google Pay (UPI)</h3>
+        <p>Scan the QR code and complete payment</p>
+
+        
+        <img src="qr.jpeg" alt="Google Pay QR Code">
+
+        <p><b>After payment, please send screenshot on WhatsApp</b></p>
+
+        
+        <a href="https://wa.me/918081036012" target="_blank">
+            <button>Send Screenshot on WhatsApp</button>
+        </a>
+    </div>
+</section>
 
 <footer>
     <p>© 2025 AstroCipher | Cosmic Wisdom for Every Soul 🌙</p>
