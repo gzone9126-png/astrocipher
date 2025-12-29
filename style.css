@@ -91,3 +91,12 @@ footer {
     padding: 20px;
     background: rgba(0,0,0,0.8);
 }
+.qr-payment button {
+    margin-top: 10px;
+}
+
+#qrBox img {
+    width: 220px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
