@@ -1,28 +1,50 @@
+/* 🌌 GLOBAL SPACE BACKGROUND */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    color: white;
-    background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3") no-repeat center/cover;
+    color: #ffffff;
+    background: radial-gradient(circle at top, #12002b, #000010 70%);
+    background-attachment: fixed;
 }
 
+/* ⭐ STAR OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 20% 30%, white, transparent),
+        radial-gradient(1.5px 1.5px at 40% 70%, white, transparent),
+        radial-gradient(1px 1px at 60% 20%, white, transparent),
+        radial-gradient(2px 2px at 80% 80%, white, transparent),
+        radial-gradient(1px 1px at 90% 40%, white, transparent);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* 🌙 HEADER */
 header {
     text-align: center;
     padding: 40px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.65);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 header h1 {
     font-size: 48px;
     letter-spacing: 3px;
     color: #ffd700;
+    text-shadow: 0 0 15px #ffcc00;
 }
 
+/* 🌌 HERO */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
     background: rgba(0,0,0,0.5);
 }
 
+/* 🪐 SERVICES */
 .services {
     padding: 60px 20px;
     text-align: center;
@@ -31,15 +53,23 @@ header h1 {
 .services h2 {
     font-size: 36px;
     margin-bottom: 30px;
+    color: #ffdd88;
 }
 
+/* 🔮 SERVICE CARDS */
 .service-card {
-    background: rgba(0,0,0,0.7);
-    border-radius: 15px;
+    background: rgba(15, 0, 35, 0.85);
+    border-radius: 18px;
     padding: 25px;
     margin: 20px auto;
-    max-width: 400px;
-    box-shadow: 0 0 15px #6f00ff;
+    max-width: 420px;
+    box-shadow: 0 0 25px rgba(160, 0, 255, 0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(200, 0, 255, 0.6);
 }
 
 .service-card h3 {
@@ -49,9 +79,11 @@ header h1 {
 .service-card span {
     display: block;
     font-size: 22px;
-    margin: 10px 0;
+    margin: 12px 0;
+    color: #00ffd5;
 }
 
+/* ✨ BUTTONS */
 button {
     padding: 12px 25px;
     background: linear-gradient(45deg, #ff00ff, #6f00ff);
@@ -60,37 +92,49 @@ button {
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff;
 }
 
+/* 🌠 BOOKING SECTION */
 .booking {
-    padding: 60px 20px;
-    background: rgba(0,0,0,0.6);
+    padding: 70px 20px;
+    background: rgba(0,0,0,0.65);
     text-align: center;
 }
 
 .booking form {
-    max-width: 400px;
+    max-width: 420px;
     margin: auto;
 }
 
+/* 🌑 INPUTS */
 .booking input,
-.booking textarea {
+.booking textarea,
+.booking select {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #4b0082;
+    background: #0c0018;
+    color: white;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0,0,0,0.8);
+/* ✅ SUBMIT BUTTON FIX (VISIBLE) */
+.booking form button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #00ffcc, #6f00ff);
+    font-size: 18px;
 }
+
+/* 💫 QR SECTION */
 .qr-payment button {
     margin-top: 10px;
 }
@@ -98,12 +142,14 @@ footer {
 #qrBox img {
     width: 220px;
     margin: 15px 0;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,255,204,0.6);
 }
-.booking form button {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    background: linear-gradient(45deg, #00ffcc, #6f00ff);
-    font-size: 18px;
+
+/* 🌌 FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0,0,0,0.85);
+    color: #aaa;
 }
