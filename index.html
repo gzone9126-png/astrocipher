@@ -87,20 +87,28 @@
     </form>
 
     
-    <div class="qr-payment">
-        <h3>OR Pay Using Google Pay (UPI)</h3>
+    <!-- 🔹 GOOGLE PAY QR SECTION -->
+<div class="qr-payment">
+    <h3>Pay Using Google Pay (UPI)</h3>
+
+    <button type="button" onclick="toggleQR()">
+        Show QR
+    </button>
+
+    <div id="qrBox" style="display:none;">
         <p>Scan the QR code and complete payment</p>
 
-        
+        <!-- use correct extension: .jpeg / .jpg -->
         <img src="qr.jpeg" alt="Google Pay QR Code">
 
         <p><b>After payment, please send screenshot on WhatsApp</b></p>
 
-        
         <a href="https://wa.me/918081036012" target="_blank">
             <button>Send Screenshot on WhatsApp</button>
         </a>
     </div>
+</div>
+
 </section>
 
 <footer>
