@@ -223,3 +223,55 @@ footer {
     color: #00ffd5;
     text-shadow: 0 0 10px rgba(0, 255, 213, 0.7);
 }
+/* 🔘 FLOATING ABOUT BUTTON */
+.about-float-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 14px 22px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00ffcc, #6f00ff);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,255,204,0.8);
+    z-index: 999;
+}
+
+/* 🌌 ABOUT MODAL BACKDROP */
+.about-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+}
+
+/* 🪐 MODAL CONTENT */
+.about-content {
+    background: rgba(15, 0, 40, 0.95);
+    max-width: 600px;
+    margin: 8% auto;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 40px rgba(160, 0, 255, 0.7);
+}
+
+/* ❌ CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+/* 🌟 TAGLINE */
+.about-tagline {
+    margin-top: 20px;
+    color: #00ffd5;
+    font-size: 18px;
+}
