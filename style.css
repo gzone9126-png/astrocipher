@@ -193,3 +193,33 @@ footer {
     position: relative;
     z-index: 5;
 }
+/* 🌟 ABOUT US SECTION */
+.about {
+    padding: 70px 20px;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #ffdd88;
+    text-shadow: 0 0 12px rgba(255, 221, 136, 0.6);
+}
+
+.about p {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.about-tagline {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #00ffd5;
+    text-shadow: 0 0 10px rgba(0, 255, 213, 0.7);
+}
